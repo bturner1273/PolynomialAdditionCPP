@@ -20,7 +20,6 @@ int main(int argc, const char * argv[]) {
     a.product(b);
     cout << endl << endl << "Polynomial A * B = " << a.toString();
 
-    
 }
 
 /* TEST CODE

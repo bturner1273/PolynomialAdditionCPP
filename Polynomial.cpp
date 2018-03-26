@@ -133,7 +133,7 @@ void Polynomial :: add(Polynomial q){
 bool isNum(string a){
     bool result = true;
     for(int i = 0; i < a.length(); i++){
-        if(!isnumber(a.at(i)) && !(a.at(i) == '.')){
+        if((!isnumber(a.at(i)) && !(a.at(i) == '.') && !(a.at(i) == '-' && i == 0))){
             return false;
         }
     }
@@ -143,7 +143,7 @@ bool isNum(string a){
 bool isInt(string a){
     bool result = true;
     for(int i = 0; i < a.length(); i++){
-        if(!isnumber(a.at(i))){
+        if(!isnumber(a.at(i)) && !(a.at(i) == '-' && i == 0)){
             return false;
         }
     }
